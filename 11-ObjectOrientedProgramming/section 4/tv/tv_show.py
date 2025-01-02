@@ -29,7 +29,7 @@ class TV:
    def show_status(self):
       if self.is_on:
          if self.channels:
-            return f'TV is on, channel {self.channel_no}: {self.channels[self.channel_no - 1]}'
+            return f'TV is on, channel {self.channel_no}: {self.channels[self.channel_no - 1]} volume: {self.volume}'
          else:
             return f'TV is on but no channels available'
       else:

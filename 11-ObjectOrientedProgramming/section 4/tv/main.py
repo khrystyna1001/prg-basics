@@ -17,6 +17,7 @@ def main():
    tv1.set_volume(9)
    print(tv1.show_volume())
    tv1.set_channel(4)
+   tv1.decrease_volume()
    print(tv1.show_status())
 
    tv1.turn_off()
@@ -24,7 +25,3 @@ def main():
 
 if __name__ == "__main__":
    main() 
-
-# In the TV class, add support for volume adjustment in the range 0 to 10. The initial value of the volume level is 0. Add two methods to increase and decrease the TV volume 
-# level by one. Note that you cannot increase or decrease the volume beyond the specified range.
-#  Display the current volume level in the show_status() method. Then check the operation of the TV by adjusting and displaying its volume level.
